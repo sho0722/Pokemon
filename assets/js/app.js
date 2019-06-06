@@ -30,9 +30,9 @@ $(function() {
     //モンスターボールをクリックした時の処理
     $("#pokeball").on("click", function() {
         $(".message").fadeOut(1000);
-        $("#pokeball").addClass("animated bounceOut")
+        $("#pokeball").addClass("animated bounceOut");
         $("#pokemon").delay(500).addClass("animated zoomInDown").fadeIn(function() {
-        $("#voice").get(0).play();
+            $("#voice").get(0).play();
         });
     });
 });
